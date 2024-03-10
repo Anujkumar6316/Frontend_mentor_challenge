@@ -33,6 +33,7 @@
 
 body{
     background-color: var(--Cream);
+    /* height: 100vh; */
 }
 
 .card{
