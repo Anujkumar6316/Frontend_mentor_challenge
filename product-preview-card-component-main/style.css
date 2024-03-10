@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ### Primary */
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    /* ### Neutral */
+    --Verydarkblue: hsl(212, 21%, 14%);
+    --Darkgrayishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    /* ### Font */
+    --Montserrat: 'Montserrat', sans-serif;
+    --Fraunces: 'Fraunces', sans-serif;
+    --bold: 700;
+    --regular: 500;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body{
+    background-color: var(--Cream);
+}
+
+.card{
+    display: flex;
+    max-width: 650px;
+    /* height: 500px; */
+    /* border: 2px solid red; */
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--White);
+    /* box-shadow: ; */
+    margin: 15vw auto;
+}
+
+.card-content{
+    margin: 10px 30px;
+}
+
+.card img{
+    /* width: 100%; */
+    width: 330px;
+    height: 100%;
+    display: inline-block;
+    /* border-radius: 14px; */
+    /* bor */
+    /* margin-right: 50px; */
+    /* padding-right: 40px; */
+}
+
+.card-content p{
+    font-family: var(--Montserrat);
+    margin: 20px 0;
+    font-weight: 500;
+    color: var(--Darkgrayishblue);
+    line-height: 1.75rem;
+    font-weight:500;
+}
+
+.card-content h2{
+    font-family: var(--Fraunces);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--Verydarkblue);
+    line-height: 2rem;
+}
+
+.price-tag{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+button{
+    width: 100%;
+    border: none;
+    background-color: var(--Darkcyan);
+    padding: 15px 0;
+    border-radius: 8px;
+    color: var(--White);
+    font-size: 1rem;
+    font-family: var(--Montserrat);
+    font-weight: 700;
+    margin-bottom: 25px;
+    /* letter-spacing: 1.5rem; */
+    /* word-spacing: 1.5rem; */
+}
+
+.price-tag p{
+    padding-right: 40px;
+    text-decoration: line-through;
+}
+
+.price-tag h2{
+    color: var(--Darkcyan);
+    font-size: 2.2rem;
+}
+
+.title{
+    letter-spacing: 0.25rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
