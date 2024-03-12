@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ### Primary  */
+    --Green: hsl(75, 94%, 57%);
+
+    /* ### Neutral  */
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+    --small: 400;
+    --medium: 600;
+    --bold: 700;
+    --inter: 'Inter', sans-serif;
+}
+
+body{
+    background-color: var(--OffBlack);
+    color: var(--White);
+    /* height: 0vh; */
+    /* border: 2px solid red; */
+    /* width: 100%;
+    height: 100%;
+    overflow: hidden; */
+}
+
+.container{
+    background-color: var(--DarkGrey);
+    border-radius: 16px;
+    display: inline-block;
+    width: 25vw;
+    /* margin: 30vh 40vw; */
+    overflow: hidden;
+    margin-inline: auto;
+    margin: 8% 35vw;
+    /* margin-left: 100px; */
+}
+
+.card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px 30px;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-content h2{
+    font: var(--inter);
+    font-weight: var(--bold);
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+
+.card-content h4{
+    font: var(--inter);
+    font-weight: var(--bold);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    color: var(--Green)
+}
+
+.card-content img{
+    border-radius: 50%;
+    width: 100px;
+    /* margin-left: 5vw; */
+    margin-bottom: 1.5vw;
+}
+
+.card-content p{
+    font: var(--inter); 
+    font-size: 0.8rem;
+    font-weight: var(--medium);
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.card-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.btn{
+    margin: 10px 0;
+    display: inline-block;
+    width: 21vw;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--Grey);
+    /* font: white; */
+}
+
+.btn a{
+    color: var(--White);
+    text-decoration: none;
+    font-weight: var(--bold);
+}
+
