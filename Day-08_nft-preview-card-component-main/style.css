@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body{
+    background-color: var(--Verydarkblue_mainBG);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+:root {
+    /* ### Primary */
+
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /* ### Neutral */
+
+    --Verydarkblue_mainBG: hsl(217, 54%, 11%);
+    --Verydarkblue_cardBG: hsl(216, 50%, 16%);
+    --Verydarkblue_line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+.container{
+    display: flex;
+    /* height: 100%; */
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.card{
+    background-color: var(--Verydarkblue_cardBG);
+    max-width: 500px;
+    /* border: 2px solid red; */
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 25px;
+}
+
+.img-div img{
+    border-radius: 10px;
+    width: 100%;
+    /* height: 100%; */
+    margin-bottom: 20px;
+}
+
+.desc h2{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.desc p{
+    font-size: 20px;
+    color: var(--Softblue);
+    line-height: 1.75rem;
+    margin-bottom: 20px;
+}
+
+.bit-coin{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.cyan-color{
+    color: var(--Cyan);
+    display: flex;
+    gap: 8px;
+    height: 1.25rem;
+}
+
+.softblue-color{
+    color: var(--Softblue);
+    display: flex;
+    gap: 8px;
+    height: 1.25rem;
+}
+
+hr{
+    /* background-color: var(--Softblue); */
+    /* border: none; */
+    border-color: var(--Softblue);
+    margin-bottom: 20px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 1rem;
+}
+
+.avatar{
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.user p{
+    color: var(--Softblue);
+}
+
+.user span{
+    /* font-weight: 900; */
+    color: white;
+}
